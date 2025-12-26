@@ -17,7 +17,8 @@ mkdir ~/docker-practice
 cd ~/docker-practice
 ```
 
-<img width="479" height="50" alt="Frame 16 (3)" src="https://github.com/user-attachments/assets/1a14e7df-098f-4805-b01b-142fe747faca" />
+<img width="1139" height="121" alt="image" src="https://github.com/user-attachments/assets/aaf11c6b-5404-46cb-bf5b-3af8ab3a4e3f" />
+
 
 
 ### Создание файла entrypoint.sh
@@ -91,7 +92,8 @@ chmod +x entrypoint.sh
 docker build -t practice-image:1.0 .
 ```
 
-<img width="1478" height="603" alt="Frame 15" src="https://github.com/user-attachments/assets/225f8cac-ec84-415a-9968-a6e6d088db16" />
+<img width="1277" height="524" alt="image" src="https://github.com/user-attachments/assets/d09cddd7-709b-4b0e-bdb2-0f6cdc995a6a" />
+
 
 
 
@@ -101,7 +103,8 @@ docker build -t practice-image:1.0 .
 docker images
 ```
 
-<img width="1030" height="279" alt="Frame 14" src="https://github.com/user-attachments/assets/86b0e180-6757-4eb2-8d2a-81f797a46558" />
+<img width="1228" height="334" alt="image" src="https://github.com/user-attachments/assets/d91d074f-c49d-4a96-9f86-d4d7aaba4f81" />
+
 
 
 
@@ -137,7 +140,8 @@ docker logs -f practice-container-1
 docker ps -a | grep practice-container-1
 ```
 
-<img width="1420" height="53" alt="Frame 13" src="https://github.com/user-attachments/assets/1fc968e7-5928-48ce-a1cc-993d02f1f44d" />
+<img width="1280" height="49" alt="image" src="https://github.com/user-attachments/assets/e0839e7b-5b1f-4f4c-a170-6f9829368764" />
+
 
 
 
@@ -195,7 +199,8 @@ docker stats --no-stream practice-container-2 > ~/docker-practice/stats.txt
 cat ~/docker-practice/stats.txt
 ```
 
-<img width="1486" height="58" alt="Frame 12" src="https://github.com/user-attachments/assets/acdcb36b-7b9f-4d27-aa56-fd966ddd4b51" />
+<img width="1282" height="48" alt="image" src="https://github.com/user-attachments/assets/c49d7ad9-5abe-4c9f-89cc-17d630c7a220" />
+
 
 
 
@@ -233,7 +238,8 @@ docker run -d --name practice-limited \
   practice-image:1.0 60
 ```
 
-<img width="940" height="125" alt="Frame 11" src="https://github.com/user-attachments/assets/a76b7d41-1261-4043-8187-e335db643826" />
+<img width="1143" height="148" alt="image" src="https://github.com/user-attachments/assets/f40b4a2d-5d70-4625-b26c-06152d75871a" />
+
 
 
 
@@ -308,7 +314,8 @@ ls -lh ~/docker-practice/container_export.tar
 tar -tf ~/docker-practice/container_export.tar | head -20
 ```
 
-<img width="1214" height="520" alt="Frame 9" src="https://github.com/user-attachments/assets/dd510f12-34a8-4432-8481-3f7259217402" />
+<img width="1144" height="514" alt="image" src="https://github.com/user-attachments/assets/4e4dd9a7-0e0b-41db-a8f3-5c8c1c1d2eeb" />
+
 
 
 
@@ -334,7 +341,8 @@ tar -tf ~/docker-practice/container_export.tar | head -20
 docker import ~/docker-practice/container_export.tar restored-practice:1.0
 ```
 
-<img width="1385" height="53" alt="Frame 8" src="https://github.com/user-attachments/assets/ec009918-1b54-4540-b35b-2e6c09f8e817" />
+<img width="1245" height="49" alt="image" src="https://github.com/user-attachments/assets/aaa5f062-e8ed-4b53-81e4-098bfed0beac" />
+
 
 
 
@@ -344,7 +352,8 @@ docker import ~/docker-practice/container_export.tar restored-practice:1.0
 docker run -d --name restored-from-tar restored-practice:1.0 /home/appuser/entrypoint.sh 30
 ```
 
-<img width="1605" height="51" alt="Frame 7" src="https://github.com/user-attachments/assets/bd129d7c-5707-45d9-90e4-e8ab7a7ea11e" />
+<img width="1245" height="49" alt="image" src="https://github.com/user-attachments/assets/b3cd19d7-656b-46d4-bf03-7552c2f163c7" />
+
 
 
 Проверил работу контейнера, просмотрел логи восстановленного контейнера:
@@ -354,7 +363,8 @@ sleep 35
 docker logs restored-from-tar
 ```
 
-<img width="1545" height="625" alt="Frame 6" src="https://github.com/user-attachments/assets/ad8a375f-cb23-464f-8033-8010f4056757" />
+<img width="1259" height="511" alt="image" src="https://github.com/user-attachments/assets/02921eb8-05c6-4850-b301-48f81c6a13e2" />
+
 
 
 
